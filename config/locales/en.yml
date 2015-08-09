@@ -417,8 +417,8 @@ en:
       enable_stock_control?:  Enable stock control for this product?
       featured?: Featured?
       featured_info:  If checked, this product will appear on your homepage
-      sellitem?: Featured?
-      sellitem_info:  If checked, this product will appear on your homepage
+      sellitem?: Sell Item?
+      sellitem_info:  Unchecked items will be removed from the store!
       import_products: Import products
       in_the_box: What's in the box?
       name: Name
