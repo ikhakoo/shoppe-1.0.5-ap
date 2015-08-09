@@ -123,6 +123,7 @@ class CreateShoppeInitialSchema < ActiveRecord::Migration
       t.text     "short_description"
       t.text     "colors"
       t.text     "sizes"
+      t.boolean  "sell_item",                                   default: true
       t.boolean  "active",                                      default: true
       t.decimal  "weight",              precision: 8, scale: 3, default: 0.0
       t.decimal  "price",               precision: 8, scale: 2, default: 0.0

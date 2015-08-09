@@ -107,16 +107,21 @@
 
   = field_set_tag  t('shoppe.products.website_properties') do
     .splitContainer
-      %dl.half
+      %dl.third
         %dt= f.label :active,  t('shoppe.products.on_sale?')
         %dd.checkbox
           = f.check_box :active
           = f.label :active,  t('shoppe.products.on_sale_info')
-      %dl.half
+      %dl.third
         %dt= f.label :featured,  t('shoppe.products.featured?')
         %dd.checkbox
           = f.check_box :featured
           = f.label :featured, t('shoppe.products.featured_info')
+      %dl.third
+        %dt= f.label :sell_item,  t('shoppe.products.sellitem?')
+        %dd.checkbox
+          = f.check_box :sell_item
+          = f.label :sell_item, t('shoppe.products.sellitem_info')
 
   %p.submit
     - unless @product.new_record?
