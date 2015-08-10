@@ -1,6 +1,31 @@
 # NOTICE:
 
-This gem is based on the original Shoppe gem but contains additional features for managing colours and sizes in your database.  In order to active colors and sizes you must add them into your views and update your buy method.  Please see the repo https://github.com/ikhakoo/ap or visit the demo site: https://ap-uniforms.herokuapp.com 
+This gem is based on the original Shoppe gem but contains additional features for managing colors and sizes in your database.  In order to active colors and sizes you must add them into your views and update your buy method.  Please see the repo https://github.com/ikhakoo/ap or visit the demo site: https://ap-uniforms.herokuapp.com 
+
+An additional field called "sell_item?" controls what is viewable in the store.
+
+By adding a version of this code to your view, you will be able to determine if the item will display or not:
+
+<% if @product.sell_item? %> { true }
+
+Or in your controller:
+
+def index
+	@products = Shoppe::Product.where(sell_item: true)
+end
+
+All items default to true when created and unchecking the box on /shoppe/products/:product_id/edit page will remove it from your store front assuming you use the code above.
+
+Order Item has 2 new fields "color" and "size" to accomodate the values passed through the buy method to add to cart.
+
+This also allows the user to update per color or size.
+
+The only drawback is that the seller is unable to track inventory on a per item/per color basis but the positive is that it allows you to have multiple variants without having to create new records in your database to store those individual variants.
+
+# WARNING
+
+If you do not require colors or sizes and prefer to use variants I suggest using the shoppe gem from the main repo. If you require assistance with this gem please contact me.
+
 
 # Shoppe
 
