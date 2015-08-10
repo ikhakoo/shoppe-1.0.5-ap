@@ -6,12 +6,12 @@ An additional field called "sell_item?" controls what is viewable in the store.
 
 By adding a version of this code to your view, you will be able to determine if the item will display or not:
 
-<% if @product.sell_item? %> { true }
+		<% if @product.sell_item? %> { true }
 
 Or in your controller:
 
 
-@products = Shoppe::Product.where(sell_item: true)
+		@products = Shoppe::Product.where(sell_item: true)
 
 
 All items default to true when created and unchecking the box on /shoppe/products/:product_id/edit page will remove it from your store front assuming you use the code above.
@@ -32,9 +32,6 @@ If you do not require colors or sizes and prefer to use variants I suggest using
 Shoppe is an Rails-based e-commerce platform which allows you to easily introduce a
 catalogue-based store into your Rails 4 applications. 
 
-![GemVersion](1.0.5)
-[![Code Climate](https://codeclimate.com/github/tryshoppe/core/badges/gpa.svg)](https://codeclimate.com/github/tryshoppe/core)
-[![Build Status](https://travis-ci.org/tryshoppe/shoppe.svg?branch=master)](https://travis-ci.org/tryshoppe/shoppe)
 
 * [Check out the website](http://tryshoppe.com)
 * [View the demo site](http://demo.tryshoppe.com)
