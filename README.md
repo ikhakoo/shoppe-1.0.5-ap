@@ -10,9 +10,9 @@ By adding a version of this code to your view, you will be able to determine if 
 
 Or in your controller:
 
-def index
-	@products = Shoppe::Product.where(sell_item: true)
-end
+
+@products = Shoppe::Product.where(sell_item: true)
+
 
 All items default to true when created and unchecking the box on /shoppe/products/:product_id/edit page will remove it from your store front assuming you use the code above.
 
