@@ -32,7 +32,7 @@ If you do not require colors or sizes and prefer to use variants I suggest using
 Shoppe is an Rails-based e-commerce platform which allows you to easily introduce a
 catalogue-based store into your Rails 4 applications. 
 
-![GemVersion](https://badge.fury.io/rb/shoppe.png)
+![GemVersion](1.0.5)
 [![Code Climate](https://codeclimate.com/github/tryshoppe/core/badges/gpa.svg)](https://codeclimate.com/github/tryshoppe/core)
 [![Build Status](https://travis-ci.org/tryshoppe/shoppe.svg?branch=master)](https://travis-ci.org/tryshoppe/shoppe)
 
