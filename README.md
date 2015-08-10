@@ -6,7 +6,7 @@ An additional field called "sell_item?" controls what is viewable in the store.
 
 By adding a version of this code to your view, you will be able to determine if the item will display or not:
 
-		<% if @product.sell_item? %> { true }
+		<% if @product.sell_item? %> 
 
 Or in your controller:
 
