@@ -123,6 +123,23 @@
           = f.check_box :sell_item
           = f.label :sell_item, t('shoppe.products.sellitem_info')
 
+  = field_set_tag  t('shoppe.products.item_properties') do
+    .splitContainer
+      %dl.third
+        %dt= f.label :mens,  t('shoppe.products.mens?')
+        %dd.checkbox
+          = f.check_box :mens
+          = f.label :mens,  t('shoppe.products.mens_info')
+      %dl.third
+        %dt= f.label :womens,  t('shoppe.products.womens?')
+        %dd.checkbox
+          = f.check_box :womens
+          = f.label :womens, t('shoppe.products.womens_info')
+      %dl.third
+        %dt= f.label :unisex,  t('shoppe.products.unisex?')
+        %dd.checkbox
+          = f.check_box :unisex
+          = f.label :unisex, t('shoppe.products.unisex_info')
   %p.submit
     - unless @product.new_record?
       %span.right= link_to t('shoppe.delete') , @product, :class => 'button purple', :method => :delete, :data => {:confirm => "Are you sure you wish to remove this product?"}

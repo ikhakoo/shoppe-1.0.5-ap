@@ -421,6 +421,7 @@ en:
       sellitem_info:  Unchecked items will be removed from the store!
       import_products: Import products
       in_the_box: What's in the box?
+      item_properties: Item Properties
       name: Name
       new_product: New product
       no_products: No products to display.
@@ -566,6 +567,8 @@ en:
       edit_variant: New variant
       enable_stock_control?: Enable stock control for this product?
       image: Image
+      mens?: Men's Wear?
+      mens_info: If checked, this product will be categorized as Men's wear.
       name: Name
       no_products: No products to display.
       no_stock: No stock
@@ -582,11 +585,15 @@ en:
       stock: Stock
       stock_control: Stock Control
       tax_rate: Tax rate
+      unisex?: Unisex Wear?
+      unisex_info: If checked, this product will be categorized as Unisex.
       update_notice: Variant has been updated successfully
       variants: Variants
       variants_of: "Variants of %{product}"
       website_properties: Website Properties
       weight: Weight
+      womens?: Women's Wear?
+      womens_info: If checked, this product will be categorized as Women's wear.
 
     payments:
       create_notice: Payment has been added successfully
