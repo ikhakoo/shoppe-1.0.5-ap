@@ -13,10 +13,6 @@ module Shoppe
       @users = Shoppe::User.all
     end
 
-    def clients
-      @clients = Client.all
-    end
-
     def new
       @user = Shoppe::User.new
     end
