@@ -13,5 +13,5 @@
     %tbody
       - for client in @clients
         %tr
-          %td= link_to client.first_name, [:edit, client]
+          %td= client.first_name
           %td= client.email_address
