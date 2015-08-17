@@ -557,6 +557,8 @@ en:
 
     variants:
       back_to_variants: Back to variants
+      childrens?: Childrens Wear?
+      childrens_info: If checked, this product will be categorized as Childrens.
       cost_price: Cost price
       create_notice: Variant has been added successfully
       default_variant?: Default variant?

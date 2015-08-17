@@ -123,6 +123,7 @@ class CreateShoppeInitialSchema < ActiveRecord::Migration
       t.text     "short_description"
       t.text     "colors"
       t.text     "sizes"
+      t.boolean  "childrens"
       t.boolean  "mens"
       t.boolean  "unisex"
       t.boolean  "womens",                                      default: true
