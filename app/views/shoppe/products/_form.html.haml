@@ -141,10 +141,10 @@
           = f.check_box :unisex
           = f.label :unisex, t('shoppe.products.unisex_info')
       %dl.quarter
-        %dt= f.label :childrens,  t('shoppe.products.unisex?')
+        %dt= f.label :childrens,  t('shoppe.products.childrens?')
         %dd.checkbox
           = f.check_box :childrens
-          = f.label :childrens, t('shoppe.products.unisex_info')
+          = f.label :childrens, t('shoppe.products.childrens_info')
 
   %p.submit
     - unless @product.new_record?
