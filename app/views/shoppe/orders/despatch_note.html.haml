@@ -31,6 +31,8 @@
         %th= t("shoppe.orders.despatch_note.quantity")
         %th= t("shoppe.orders.despatch_note.product")
         %th= t("shoppe.orders.despatch_note.sku")
+        %th= t("shoppe.orders.despatch_note.sku")
+        %th= t("shoppe.orders.despatch_note.sku")
         %th= t("shoppe.orders.despatch_note.weight")
         %th= t("shoppe.orders.despatch_note.packed?")
     %tbody
@@ -38,6 +40,8 @@
         %tr
           %td= item.quantity
           %td= item.ordered_item.full_name
+          %td= item.ordered_item.color
+          %td= item.ordered_item.size
           %td= item.ordered_item.sku
           %td= number_to_weight item.weight
           %td.check
