@@ -6,6 +6,8 @@
           %th.qty= t('shoppe.orders.qty')
           %th= t('shoppe.orders.item')
           %th= t('shoppe.orders.sku')
+          %th= t('shoppe.orders.sku')
+          %th= t('shoppe.orders.sku')
           %th.money= t('shoppe.orders.cost')
           %th.money= t('shoppe.orders.price')
           %th.money= Shoppe.settings.tax_name
@@ -15,6 +17,8 @@
           %tr
             %td.qty= item.quantity
             %td.product= item.ordered_item.full_name
+            %td.sku= item.ordered_item.color
+            %td.sku= item.ordered_item.size
             %td.sku= item.ordered_item.sku
             %td.money= number_to_currency item.total_cost
             %td.money= number_to_currency item.sub_total
@@ -23,6 +27,8 @@
         - if @order.delivery_service
           %td.qty
           %td.product= link_to @order.delivery_service.name, [:edit, @order.delivery_service]
+          %td.sku
+          %td.sku
           %td.sku
           %td.money= number_to_currency @order.delivery_cost_price
           %td.money= number_to_currency @order.delivery_price
